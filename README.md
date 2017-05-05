@@ -11,7 +11,7 @@ Visit [https://underlineapp.com/app](https://underlineapp.com/app) on your mobil
 A [Dropbox](https://www.dropbox.com) account  
 
 ### Run locally
-Rename `assets/js/config.sample.js` to `config.js` and add your Dropbox app key [https://www.dropbox.com/developers/apps](https://www.dropbox.com/developers/apps)
+Rename `src/js/config.sample.js` to `config.js` and add your Dropbox app key [https://www.dropbox.com/developers/apps](https://www.dropbox.com/developers/apps)
 
 `yarn install`  
 `npm start`  
