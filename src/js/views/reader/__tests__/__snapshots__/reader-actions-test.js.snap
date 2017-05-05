@@ -1,0 +1,9 @@
+exports[`loadBook action 1`] = `"{\"type\":\"LOAD_BOOK\",\"id\":1}"`;
+
+exports[`sliderPositionChanged action 1`] = `"{\"type\":\"SLIDER_POSITION_CHANGED\",\"percentage\":0.56}"`;
+
+exports[`sliderReleased action 1`] = `"{"type":"SLIDER_RELEASED","percentage":0.65}"`;
+
+exports[`updateBookPositionData action 1`] = `"{\"type\":\"UPDATE_BOOK_POSITION_DATA\",\"id\":1,\"location\":{\"percentage\":0.76}}"`;
+
+exports[`updateCurrentBookData action 1`] = `"{\"type\":\"UPDATE_CURRENT_BOOK_DATA\",\"data\":{\"id\":1,\"file\":\"blob\",\"parsed_data\":null,\"author\":\"The book author\",\"cover_image\":\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\",\"current_location\":{\"start\":null,\"percentage\":0,\"end\":null},\"total_locations\":0,\"title\":\"A Good Book\"}}"`;

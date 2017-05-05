@@ -1,0 +1,59 @@
+@import '~colors.scss';
+@import '~variables.scss';
+
+.wrapper {
+  background-color: $white;
+  display: none;
+  float: left;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 750;
+}
+
+.wrapperShowing {
+  composes: wrapper;
+  display: block;
+}
+
+.contentWrapper {
+  float: left;
+  height: 100%;
+  max-width: $max-content-width;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 80px 20px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.infoBlock {
+  float: left;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.title,
+strong {
+  float: left;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5em;
+  width: 100%;
+}
+
+strong {
+  font-size: 18px;
+}
+
+.content {
+  font-size: 20px;
+  line-height: 1.5em;
+
+  a {
+    color: $rose;
+  }
+}

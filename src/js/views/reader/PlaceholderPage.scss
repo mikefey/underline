@@ -1,0 +1,44 @@
+@import '~colors.scss';
+@import '~variables.scss';
+
+.wrapper {
+  height: 100%;
+  padding: 80px 20px 20px;
+  position: absolute;
+  width: 100%;
+}
+
+.left {
+  left: -100vw;
+
+  @media (min-width: $max-content-width) {
+    left: -$max-content-width;
+  }
+}
+
+.right {
+  left: 100vw;
+
+  @media (min-width: $max-content-width) {
+    left: $max-content-width;
+  }
+}
+
+.line {
+  background-color: $light-grey;
+  float: left;
+  height: 4px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.lineOne {
+  composes: line;
+  width: 100%;
+}
+
+.lineTwo {
+  composes: line;
+  margin-bottom: 30px;
+  width: 75%;
+}

@@ -1,0 +1,18 @@
+@import '~colors.scss';
+@import '~variables.scss';
+
+.wrapper {
+  border-bottom: 1px solid $light-grey;
+  color: $dark-grey;
+  cursor: pointer;
+  float: left;
+  font-size: 18px;
+  max-width: $max-content-width;
+  padding: 16px 10px;
+  position: relative;
+  width: 100%;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}

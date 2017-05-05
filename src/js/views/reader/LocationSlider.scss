@@ -1,0 +1,65 @@
+@import '~colors.scss';
+@import '~variables.scss';
+
+.wrapper {
+  bottom: 10px;
+  height: 30px;
+  left: 0;
+  padding: 0 20px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 700;
+}
+
+.sliderWrapper {
+  height: 100%;
+  margin-left: 20px;
+  max-width: $max-content-width;
+  position: relative;
+  width: calc(100% - 40px);
+
+  @media(min-width: $max-content-width) {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.sliderTrack {
+  background-color: $light-grey;
+  height: 4px;
+  margin-top: 13px;
+  position: absolute;
+  width: 100%;
+}
+
+.sliderProgress {
+  composes: sliderTrack;
+  background-color: $rose;
+}
+
+.sliderDraggable {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  height: 40px;
+  margin: -5px 0 0 -20px;
+  position: absolute;
+  width: 40px;
+
+  &:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+  }
+}
+
+.sliderHandle {
+  background-color: $rose;
+  border-radius: 50%;
+  height: 16px;
+  margin: 11px 0 0 11px;
+  position: absolute;
+  width: 16px;
+}

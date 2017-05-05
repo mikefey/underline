@@ -1,0 +1,5 @@
+exports[`default state 1`] = `"{\"show\":false}"`;
+
+exports[`handles HIDE_INFO 1`] = `"{"show":false}"`;
+
+exports[`handles SHOW_INFO 1`] = `"{\"show\":true}"`;

@@ -1,0 +1,149 @@
+@import '~colors.scss';
+
+.wrapper {
+  border-bottom: 1px solid $dark-grey;
+  float: left;
+  height: 100px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.button {
+  color: $dark-grey;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.removeButton {
+  bottom: 0;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  width: 40px;
+}
+
+.removeButtonIcon {
+  background-color: $red;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 600;
+  height: 15px;
+  margin: 11px 0 0 12px;
+  position: absolute;
+  width: 15px;
+  top: 0;
+}
+
+.removeButtonIconLine {
+  background-color: $white;
+  height: 1px;
+  margin: 7px 0 0 3px;
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 9px;
+}
+
+.removeButtonIconLineTwo {
+  composes: removeButtonIconLine;
+  transform: rotate(45deg);
+}
+
+.imageWrapper {
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  width: 30%;
+
+  @media(min-width: 600px) {
+    width: 20%;
+  }
+
+  img {
+    box-shadow: 0 0 10px 1px $medium-opacity-black;
+    float: left;
+    left: 50%;
+    max-height: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.imagePlaceholder {
+  background-color: $light-grey;
+  border: 1px solid $dark-grey;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  float: left;
+  height: 100%;
+  left: 50%;
+  max-height: calc(100% - 20px);
+  max-width: 50%;
+  padding-top: 25px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.textWrapper {
+  float: left;
+  padding: 10px;
+  position: relative;
+  width: 70%;
+
+  @media(min-width: 600px) {
+    width: 80%;
+  }
+}
+
+.title {
+  float: left;
+  line-height: 18px;
+  position: relative;
+  font-size: 18px;
+  width: 100%;
+}
+
+.author {
+  float: left;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.progressWrapper {
+  bottom: 15px;
+  height: 2px;
+  left: calc(30% + 10px);
+  position: absolute;
+  width: calc(70% - 70px);
+
+  @media(min-width: 600px) {
+    left: calc(20% + 10px);
+    width: calc(80% - 70px);
+  }
+}
+
+.progressBack {
+  background-color: $light-grey;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.progress {
+  background-color: $rose;
+  height: 100%;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+}

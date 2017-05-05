@@ -1,0 +1,20 @@
+@import '~colors.scss';
+
+.wrapper {
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  height: 28px;
+  left: 20px;
+  position: absolute;
+  top: 15px;
+  width: 28px;
+}
+
+.icon {
+  font-size: 18px;
+  margin-left: 0;
+}

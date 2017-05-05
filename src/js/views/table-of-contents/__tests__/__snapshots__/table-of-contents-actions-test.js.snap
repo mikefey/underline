@@ -1,0 +1,5 @@
+exports[`hideTableOfContents action 1`] = `"{"type":"HIDE_TABLE_OF_CONTENTS"}"`;
+
+exports[`showTableOfContents action 1`] = `"{\"type\":\"SHOW_TABLE_OF_CONTENTS\"}"`;
+
+exports[`updateTableOfContents action 1`] = `"{\"type\":\"UPDATE_TABLE_OF_CONTENTS\",\"data\":[{\"title\":\"item 1\",\"href\":\"item-1.html\"},{\"title\":\"item 2\",\"href\":\"item-2.html\"}]}"`;

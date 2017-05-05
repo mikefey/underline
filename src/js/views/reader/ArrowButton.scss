@@ -1,0 +1,45 @@
+@import '~colors.scss';
+
+.wrapper {
+  cursor: pointer;
+  display: none;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  width: 40px;
+
+  @media(min-width: 960px) {
+    display: block;
+  }
+}
+
+.wrapperRight {
+  composes: wrapper;
+  left: auto;
+  right: -80px;
+  transform: rotate(180deg);
+}
+
+.icon {
+  left: 4px;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+
+.iconLine {
+  background-color: $dark-grey;
+  height: 2px;
+  margin: 11px 0 0 5px;
+  position: relative;
+  transform: rotate(-45deg);
+  width: 20px;
+}
+
+.iconLineTwo {
+  composes: iconLine;
+  margin-top: 11px;
+  transform: rotate(45deg);
+}

@@ -1,0 +1,7 @@
+exports[`collection-actions 1`] = `"{"type":"DOWNLOAD_BOOK","url":"/path/to/book"}"`;
+
+exports[`downloadBook action 1`] = `"{\"type\":\"DOWNLOAD_BOOK\",\"url\":\"/path/to/book\"}"`;
+
+exports[`getCollection action 1`] = `"{\"type\":\"GET_COLLECTION\"}"`;
+
+exports[`updateCollection action 1`] = `"{\"type\":\"ADD_BOOK_TO_COLLECTION\",\"data\":{\"id\":\"12345\",\"title\":\"A New Book\"}}"`;

@@ -1,0 +1,28 @@
+{
+  "env": {
+    "test": {
+      "plugins": [
+        ["transform-runtime"],
+        ["module-resolver", {
+          "root": ["./src/js"]
+        }],
+        [
+          "css-modules-transform",
+          {
+            "extensions": [
+              ".css",
+              ".scss"
+            ],
+            "generateScopedName": "[name]__[local]___[hash:base64:15]"
+          }
+        ]
+      ],
+      "presets": [
+        "es2015",
+        "stage-0",
+        "react",
+        "@ava/stage-4"
+      ]
+    }
+  }
+}

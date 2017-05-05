@@ -1,0 +1,20 @@
+@import '~colors.scss';
+
+.wrapper {
+  background-color: $rose;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 35px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  width: 35px;
+}
+
+.icon {
+  background-image: url('add-book-icon-white.png');
+  background-size: cover;
+  height: 18px;
+  margin: 9px 0 0 10px;
+  width: 18px;
+}

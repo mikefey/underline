@@ -1,0 +1,3 @@
+exports[`hideInfo action 1`] = `"{"type":"HIDE_INFO"}"`;
+
+exports[`showInfo action 1`] = `"{\"type\":\"SHOW_INFO\"}"`;

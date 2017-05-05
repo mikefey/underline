@@ -1,0 +1,28 @@
+@import '~colors.scss';
+@import '~variables.scss';
+
+.wrapper {
+  background-color: $white;
+  display: none;
+  float: left;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 750;
+}
+
+.wrapperShowing {
+  composes: wrapper;
+  display: block;
+}
+
+.buttonsWrapper {
+  float: left;
+  height: 100%;
+  max-width: $max-content-width;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  padding: 60px 0 0;
+  position: relative;
+  width: 100%;
+}

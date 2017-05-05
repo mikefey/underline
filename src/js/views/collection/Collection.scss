@@ -1,0 +1,35 @@
+@import '~colors.scss';
+
+.wrapper {
+  float: left;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.booksWrapper {
+  float: left;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  padding: 60px 0 80px;
+  position: relative;
+  width: 100%;
+}
+
+.message {
+  float: left;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  a {
+    color: $rose;
+  }
+}

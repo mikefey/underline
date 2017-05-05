@@ -1,0 +1,79 @@
+@import '~colors.scss';
+
+.wrapper {
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 600;
+}
+
+.wrapperShowing {
+  composes: wrapper;
+  display: block;
+}
+
+.background {
+  background-color: $white;
+  height: 100%;
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+}
+
+.content {
+  background-color: $white;
+  box-shadow: 0 0 10px 1px $medium-opacity-black;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  height: 300px;
+  left: 50%;
+  letter-spacing: -.02em;
+  margin: -150px 0 0 -130px;
+  position: absolute;
+  top: 50%;
+  width: 260px;
+}
+
+.text {
+  float: left;
+  margin-top: 105px;
+  padding: 0 20px;
+  position: relative;
+  width: 100%;
+}
+
+.iOSIcon {
+  display: inline-block;
+  height: 20px;
+  margin: 0 -5px;
+  position: relative;
+
+  svg {
+    height: 100%;
+    width: auto;
+
+    path {
+      fill: $rose;
+    }
+  }
+}
+
+.androidIcon {
+  display: inline-block;
+  height: 15px;
+  margin: 0 1px 0 5px;
+  position: relative;
+
+  svg {
+    height: 100%;
+    width: auto;
+
+    rect {
+      fill: $rose;
+    }
+  }
+}

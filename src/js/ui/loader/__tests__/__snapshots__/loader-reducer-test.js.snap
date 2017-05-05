@@ -1,0 +1,5 @@
+exports[`default state 1`] = `"{\"show\":false,\"message\":\"\"}"`;
+
+exports[`handles HIDE_LOADER 1`] = `"{"show":false,"message":""}"`;
+
+exports[`handles SHOW_LOADER 1`] = `"{\"show\":true,\"message\":\"Loading\"}"`;
