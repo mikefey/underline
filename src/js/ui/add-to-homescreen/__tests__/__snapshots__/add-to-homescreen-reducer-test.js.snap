@@ -1,5 +1,0 @@
-exports[`default state 1`] = `"{\"show\":false,\"os\":null}"`;
-
-exports[`handles HIDE_ADD_TO_HOMESCREEN 1`] = `"{"show":false,"os":null}"`;
-
-exports[`handles SHOW_ADD_TO_HOMESCREEN 1`] = `"{\"show\":true,\"os\":\"Android\"}"`;
