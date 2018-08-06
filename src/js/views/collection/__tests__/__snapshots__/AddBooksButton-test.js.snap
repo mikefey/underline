@@ -1,1 +1,3 @@
-exports[`AddBooksButton component 1`] = `"\"<div class=\\\"AddBooksButton__wrapper___3WnirUQZPEP4sp_\\\" data-reactroot=\\\"\\\" data-reactid=\\\"1\\\" data-react-checksum=\\\"1687700633\\\"><div data-reactid=\\\"2\\\"><div class=\\\"AddBooksButton__icon___3Vo3Yz3c1Emxo_A\\\" data-reactid=\\\"3\\\"></div></div></div>\""`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddBooksButton component 1`] = `"<div class=\\"AddBooksButton__wrapper___3WnirUQZPEP4sp_\\" data-reactroot=\\"\\" data-reactid=\\"1\\" data-react-checksum=\\"1687700633\\"><div data-reactid=\\"2\\"><div class=\\"AddBooksButton__icon___3Vo3Yz3c1Emxo_A\\" data-reactid=\\"3\\"></div></div></div>"`;

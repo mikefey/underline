@@ -1,5 +1,19 @@
-exports[`default state 1`] = `"{\"show\":false}"`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`handles HIDE_INFO 1`] = `"{"show":false}"`;
+exports[`default state 1`] = `
+Object {
+  "show": false,
+}
+`;
 
-exports[`handles SHOW_INFO 1`] = `"{\"show\":true}"`;
+exports[`handles HIDE_INFO 1`] = `
+Object {
+  "show": false,
+}
+`;
+
+exports[`handles SHOW_INFO 1`] = `
+Object {
+  "show": true,
+}
+`;

@@ -1,7 +1,42 @@
-exports[`default state 1`] = `"{\"clickedButtonIndex\":null,\"data\":null,\"show\":false}"`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`handles HIDE_TABLE_OF_CONTENTS 1`] = `"{"clickedButtonIndex":null,"data":null,"show":false}"`;
+exports[`default state 1`] = `
+Object {
+  "clickedButtonIndex": null,
+  "data": null,
+  "show": false,
+}
+`;
 
-exports[`handles SHOW_TABLE_OF_CONTENTS 1`] = `"{\"clickedButtonIndex\":null,\"data\":null,\"show\":true}"`;
+exports[`handles HIDE_TABLE_OF_CONTENTS 1`] = `
+Object {
+  "clickedButtonIndex": null,
+  "data": null,
+  "show": false,
+}
+`;
 
-exports[`handles UPDATE_TABLE_OF_CONTENTS 1`] = `"{\"clickedButtonIndex\":null,\"data\":[{\"title\":\"item 1\",\"href\":\"item-1.html\"},{\"title\":\"item 2\",\"href\":\"item-2.html\"}],\"show\":false}"`;
+exports[`handles SHOW_TABLE_OF_CONTENTS 1`] = `
+Object {
+  "clickedButtonIndex": null,
+  "data": null,
+  "show": true,
+}
+`;
+
+exports[`handles UPDATE_TABLE_OF_CONTENTS 1`] = `
+Object {
+  "clickedButtonIndex": null,
+  "data": Array [
+    Object {
+      "href": "item-1.html",
+      "title": "item 1",
+    },
+    Object {
+      "href": "item-2.html",
+      "title": "item 2",
+    },
+  ],
+  "show": false,
+}
+`;

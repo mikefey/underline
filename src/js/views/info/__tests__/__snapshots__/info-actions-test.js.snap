@@ -1,3 +1,13 @@
-exports[`hideInfo action 1`] = `"{"type":"HIDE_INFO"}"`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`showInfo action 1`] = `"{\"type\":\"SHOW_INFO\"}"`;
+exports[`hideInfo action 1`] = `
+Object {
+  "type": "HIDE_INFO",
+}
+`;
+
+exports[`showInfo action 1`] = `
+Object {
+  "type": "SHOW_INFO",
+}
+`;

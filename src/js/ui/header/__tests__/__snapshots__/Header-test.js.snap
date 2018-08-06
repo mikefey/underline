@@ -1,1 +1,3 @@
-exports[`Header component 1`] = `"\"<div class=\\\"Header__wrapper___2PTLf_nkW7S2HEU\\\" data-reactroot=\\\"\\\" data-reactid=\\\"1\\\" data-react-checksum=\\\"-46641228\\\"><div class=\\\"Header__content___2VIdu565Foup5Pb\\\" data-reactid=\\\"2\\\"><h2 class=\\\"Header__title___1_ebCiqkttbS44m\\\" data-reactid=\\\"3\\\">Your books</h2></div></div>\""`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component 1`] = `"<div class=\\"Header__wrapper___2PTLf_nkW7S2HEU\\" data-reactroot=\\"\\" data-reactid=\\"1\\" data-react-checksum=\\"-46641228\\"><div class=\\"Header__content___2VIdu565Foup5Pb\\" data-reactid=\\"2\\"><h2 class=\\"Header__title___1_ebCiqkttbS44m\\" data-reactid=\\"3\\">Your books</h2></div></div>"`;

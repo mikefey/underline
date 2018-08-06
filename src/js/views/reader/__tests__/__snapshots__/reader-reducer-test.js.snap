@@ -1,13 +1,89 @@
-exports[`default state 1`] = `"{\"loadingBook\":false,\"currentBookId\":null,\"currentBookData\":null,\"jumpToPage\":null,\"sliderPercentageOnRelease\":0}"`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`handles BOOK_POSITION_DATA_UPDATED 1`] = `"{\"currentBookData\":{\"id\":1,\"file\":\"blob\",\"parsed_data\":null,\"author\":\"The book author\",\"cover_image\":\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\",\"current_location\":0.96,\"total_locations\":0,\"title\":\"A Good Book\"}}"`;
+exports[`default state 1`] = `
+Object {
+  "currentBookData": null,
+  "currentBookId": null,
+  "jumpToPage": null,
+  "loadingBook": false,
+  "sliderPercentageOnRelease": 0,
+}
+`;
 
-exports[`handles LOAD_BOOK 1`] = `"{\"loadingBook\":true,\"currentBookId\":null,\"currentBookData\":null,\"jumpToPage\":null,\"sliderPercentageOnRelease\":0}"`;
+exports[`handles BOOK_POSITION_DATA_UPDATED 1`] = `
+Object {
+  "currentBookData": Object {
+    "author": "The book author",
+    "cover_image": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "current_location": 0.96,
+    "file": "blob",
+    "id": 1,
+    "parsed_data": null,
+    "title": "A Good Book",
+    "total_locations": 0,
+  },
+}
+`;
 
-exports[`handles LOAD_BOOK_COMPLETE 1`] = `"{\"loadingBook\":false,\"currentBookId\":null,\"currentBookData\":null,\"jumpToPage\":null,\"sliderPercentageOnRelease\":0}"`;
+exports[`handles LOAD_BOOK 1`] = `
+Object {
+  "currentBookData": null,
+  "currentBookId": null,
+  "jumpToPage": null,
+  "loadingBook": true,
+  "sliderPercentageOnRelease": 0,
+}
+`;
 
-exports[`handles READER_EXITED 1`] = `"{\"loadingBook\":false,\"currentBookId\":null,\"currentBookData\":null,\"jumpToPage\":null,\"sliderPercentageOnRelease\":0}"`;
+exports[`handles LOAD_BOOK_COMPLETE 1`] = `
+Object {
+  "currentBookData": null,
+  "currentBookId": null,
+  "jumpToPage": null,
+  "loadingBook": false,
+  "sliderPercentageOnRelease": 0,
+}
+`;
 
-exports[`handles SLIDER_RELEASED 1`] = `"{"loadingBook":false,"currentBookId":null,"currentBookData":null,"jumpToPage":null,"sliderPercentageOnRelease":0.57}"`;
+exports[`handles READER_EXITED 1`] = `
+Object {
+  "currentBookData": null,
+  "currentBookId": null,
+  "jumpToPage": null,
+  "loadingBook": false,
+  "sliderPercentageOnRelease": 0,
+}
+`;
 
-exports[`handles UPDATE_CURRENT_BOOK_DATA 1`] = `"{\"loadingBook\":false,\"currentBookId\":null,\"currentBookData\":{\"id\":1,\"file\":\"blob\",\"parsed_data\":null,\"author\":\"The book author\",\"cover_image\":\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\",\"current_location\":{\"start\":null,\"percentage\":0,\"end\":null},\"total_locations\":0,\"title\":\"A Good Book\"},\"jumpToPage\":null,\"sliderPercentageOnRelease\":0}"`;
+exports[`handles SLIDER_RELEASED 1`] = `
+Object {
+  "currentBookData": null,
+  "currentBookId": null,
+  "jumpToPage": null,
+  "loadingBook": false,
+  "sliderPercentageOnRelease": 0.57,
+}
+`;
+
+exports[`handles UPDATE_CURRENT_BOOK_DATA 1`] = `
+Object {
+  "currentBookData": Object {
+    "author": "The book author",
+    "cover_image": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "current_location": Object {
+      "end": null,
+      "percentage": 0,
+      "start": null,
+    },
+    "file": "blob",
+    "id": 1,
+    "parsed_data": null,
+    "title": "A Good Book",
+    "total_locations": 0,
+  },
+  "currentBookId": null,
+  "jumpToPage": null,
+  "loadingBook": false,
+  "sliderPercentageOnRelease": 0,
+}
+`;

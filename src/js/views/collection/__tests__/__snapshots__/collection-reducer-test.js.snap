@@ -1,15 +1,99 @@
-exports[`default state 1`] = `"{\"collection\":[],\"dbReady\":false,\"downloadingBook\":false,\"gettingCollection\":false,\"initialCollectionLoaded\":false}"`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`handles ADD_BOOK_TO_COLLECTION 1`] = `"{"collection":[{"id":"1","title":"Book 1"},{"id":"2","title":"Book 2"}],"dbReady":false,"downloadingBook":false,"gettingCollection":false,"initialCollectionLoaded":false}"`;
+exports[`default state 1`] = `
+Object {
+  "collection": Array [],
+  "dbReady": false,
+  "downloadingBook": false,
+  "gettingCollection": false,
+  "initialCollectionLoaded": false,
+}
+`;
 
-exports[`handles DB_READY 1`] = `"{\"collection\":[],\"dbReady\":true,\"downloadingBook\":false,\"gettingCollection\":false,\"initialCollectionLoaded\":false}"`;
+exports[`handles ADD_BOOK_TO_COLLECTION 1`] = `
+Object {
+  "collection": Array [
+    Object {
+      "id": "1",
+      "title": "Book 1",
+    },
+    Object {
+      "id": "2",
+      "title": "Book 2",
+    },
+  ],
+  "dbReady": false,
+  "downloadingBook": false,
+  "gettingCollection": false,
+  "initialCollectionLoaded": false,
+}
+`;
 
-exports[`handles DOWNLOAD_BOOK 1`] = `"{\"collection\":[],\"dbReady\":false,\"downloadingBook\":true,\"gettingCollection\":false,\"initialCollectionLoaded\":false}"`;
+exports[`handles DB_READY 1`] = `
+Object {
+  "collection": Array [],
+  "dbReady": true,
+  "downloadingBook": false,
+  "gettingCollection": false,
+  "initialCollectionLoaded": false,
+}
+`;
 
-exports[`handles DOWNLOAD_BOOK_COMPLETE 1`] = `"{\"collection\":[],\"dbReady\":false,\"downloadingBook\":false,\"gettingCollection\":false,\"initialCollectionLoaded\":false}"`;
+exports[`handles DOWNLOAD_BOOK 1`] = `
+Object {
+  "collection": Array [],
+  "dbReady": false,
+  "downloadingBook": true,
+  "gettingCollection": false,
+  "initialCollectionLoaded": false,
+}
+`;
 
-exports[`handles GET_COLLECTION 1`] = `"{\"collection\":[],\"dbReady\":false,\"downloadingBook\":false,\"gettingCollection\":true,\"initialCollectionLoaded\":false}"`;
+exports[`handles DOWNLOAD_BOOK_COMPLETE 1`] = `
+Object {
+  "collection": Array [],
+  "dbReady": false,
+  "downloadingBook": false,
+  "gettingCollection": false,
+  "initialCollectionLoaded": false,
+}
+`;
 
-exports[`handles GET_COLLECTION_COMPLETE 1`] = `"{\"collection\":[],\"dbReady\":false,\"downloadingBook\":false,\"gettingCollection\":false,\"initialCollectionLoaded\":false}"`;
+exports[`handles GET_COLLECTION 1`] = `
+Object {
+  "collection": Array [],
+  "dbReady": false,
+  "downloadingBook": false,
+  "gettingCollection": true,
+  "initialCollectionLoaded": false,
+}
+`;
 
-exports[`handles UPDATE_COLLECTION 1`] = `"{\"collection\":[{\"id\":\"1\",\"title\":\"Book 1\"},{\"id\":\"2\",\"title\":\"Book 2\"}],\"dbReady\":false,\"downloadingBook\":false,\"gettingCollection\":false,\"initialCollectionLoaded\":true}"`;
+exports[`handles GET_COLLECTION_COMPLETE 1`] = `
+Object {
+  "collection": Array [],
+  "dbReady": false,
+  "downloadingBook": false,
+  "gettingCollection": false,
+  "initialCollectionLoaded": false,
+}
+`;
+
+exports[`handles UPDATE_COLLECTION 1`] = `
+Object {
+  "collection": Array [
+    Object {
+      "id": "1",
+      "title": "Book 1",
+    },
+    Object {
+      "id": "2",
+      "title": "Book 2",
+    },
+  ],
+  "dbReady": false,
+  "downloadingBook": false,
+  "gettingCollection": false,
+  "initialCollectionLoaded": true,
+}
+`;

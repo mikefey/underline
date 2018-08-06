@@ -1,9 +1,52 @@
-exports[`loadBook action 1`] = `"{\"type\":\"LOAD_BOOK\",\"id\":1}"`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`sliderPositionChanged action 1`] = `"{\"type\":\"SLIDER_POSITION_CHANGED\",\"percentage\":0.56}"`;
+exports[`loadBook action 1`] = `
+Object {
+  "id": 1,
+  "type": "LOAD_BOOK",
+}
+`;
 
-exports[`sliderReleased action 1`] = `"{"type":"SLIDER_RELEASED","percentage":0.65}"`;
+exports[`sliderPositionChanged action 1`] = `
+Object {
+  "percentage": 0.56,
+  "type": "SLIDER_POSITION_CHANGED",
+}
+`;
 
-exports[`updateBookPositionData action 1`] = `"{\"type\":\"UPDATE_BOOK_POSITION_DATA\",\"id\":1,\"location\":{\"percentage\":0.76}}"`;
+exports[`sliderReleased action 1`] = `
+Object {
+  "percentage": 0.65,
+  "type": "SLIDER_RELEASED",
+}
+`;
 
-exports[`updateCurrentBookData action 1`] = `"{\"type\":\"UPDATE_CURRENT_BOOK_DATA\",\"data\":{\"id\":1,\"file\":\"blob\",\"parsed_data\":null,\"author\":\"The book author\",\"cover_image\":\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\",\"current_location\":{\"start\":null,\"percentage\":0,\"end\":null},\"total_locations\":0,\"title\":\"A Good Book\"}}"`;
+exports[`updateBookPositionData action 1`] = `
+Object {
+  "id": 1,
+  "location": Object {
+    "percentage": 0.76,
+  },
+  "type": "UPDATE_BOOK_POSITION_DATA",
+}
+`;
+
+exports[`updateCurrentBookData action 1`] = `
+Object {
+  "data": Object {
+    "author": "The book author",
+    "cover_image": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "current_location": Object {
+      "end": null,
+      "percentage": 0,
+      "start": null,
+    },
+    "file": "blob",
+    "id": 1,
+    "parsed_data": null,
+    "title": "A Good Book",
+    "total_locations": 0,
+  },
+  "type": "UPDATE_CURRENT_BOOK_DATA",
+}
+`;

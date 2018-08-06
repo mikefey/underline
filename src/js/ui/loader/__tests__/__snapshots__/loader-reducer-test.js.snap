@@ -1,5 +1,22 @@
-exports[`default state 1`] = `"{\"show\":false,\"message\":\"\"}"`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`handles HIDE_LOADER 1`] = `"{"show":false,"message":""}"`;
+exports[`default state 1`] = `
+Object {
+  "message": "",
+  "show": false,
+}
+`;
 
-exports[`handles SHOW_LOADER 1`] = `"{\"show\":true,\"message\":\"Loading\"}"`;
+exports[`handles HIDE_LOADER 1`] = `
+Object {
+  "message": "",
+  "show": false,
+}
+`;
+
+exports[`handles SHOW_LOADER 1`] = `
+Object {
+  "message": "Loading",
+  "show": true,
+}
+`;

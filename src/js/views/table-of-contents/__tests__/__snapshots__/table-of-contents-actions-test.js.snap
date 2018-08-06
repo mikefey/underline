@@ -1,5 +1,29 @@
-exports[`hideTableOfContents action 1`] = `"{"type":"HIDE_TABLE_OF_CONTENTS"}"`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`showTableOfContents action 1`] = `"{\"type\":\"SHOW_TABLE_OF_CONTENTS\"}"`;
+exports[`hideTableOfContents action 1`] = `
+Object {
+  "type": "HIDE_TABLE_OF_CONTENTS",
+}
+`;
 
-exports[`updateTableOfContents action 1`] = `"{\"type\":\"UPDATE_TABLE_OF_CONTENTS\",\"data\":[{\"title\":\"item 1\",\"href\":\"item-1.html\"},{\"title\":\"item 2\",\"href\":\"item-2.html\"}]}"`;
+exports[`showTableOfContents action 1`] = `
+Object {
+  "type": "SHOW_TABLE_OF_CONTENTS",
+}
+`;
+
+exports[`updateTableOfContents action 1`] = `
+Object {
+  "data": Array [
+    Object {
+      "href": "item-1.html",
+      "title": "item 1",
+    },
+    Object {
+      "href": "item-2.html",
+      "title": "item 2",
+    },
+  ],
+  "type": "UPDATE_TABLE_OF_CONTENTS",
+}
+`;
