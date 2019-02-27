@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import indexedDB from 'libs/indexeddb/indexeddb';
 import Header from 'ui/header/Header.jsx';
 import InfoButton from './InfoButton.jsx';
@@ -10,7 +11,7 @@ import style from './Collection.scss';
 /**
  * Collection view component
  */
-class Collection extends Component {
+class Collection extends React.Component {
   constructor(props) {
     super(props);
 
@@ -173,12 +174,12 @@ class Collection extends Component {
  * UPDATE_CURRENT_BOOK_DATA action
  */
 Collection.propTypes = {
-  collectionState: React.PropTypes.object.isRequired,
-  getCollection: React.PropTypes.func.isRequired,
-  loaderState: React.PropTypes.object.isRequired,
-  resizerState: React.PropTypes.object.isRequired,
-  showInfo: React.PropTypes.func.isRequired,
-  updateCurrentBookData: React.PropTypes.func.isRequired,
+  collectionState: PropTypes.object.isRequired,
+  getCollection: PropTypes.func.isRequired,
+  loaderState: PropTypes.object.isRequired,
+  resizerState: PropTypes.object.isRequired,
+  showInfo: PropTypes.func.isRequired,
+  updateCurrentBookData: PropTypes.func.isRequired,
 };
 
 export default Collection;

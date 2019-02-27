@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, hashHistory } from 'react-router';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
@@ -29,12 +29,12 @@ const store = createStore(
 
 sagaMiddleware.run(rootSaga);
 indexedDB.init('underline', 1, [bookSchema])
-.then(() => {
-  store.dispatch(dbReady());
-})
-.catch((error) => {
-  console.log(error);
-});
+  .then(() => {
+    store.dispatch(dbReady());
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 
 /**
@@ -50,10 +50,12 @@ class Main extends Component {
       <Provider store={store}>
         <div className={style.wrapper}>
           <Resizer useScreenDimensions={(deviceOS === 'Android')} />
-          <Router history={hashHistory}>
-            <Route path='/' component={CollectionContainer} />
-            <Route path='/book/:bookId' component={ReaderContainer} />
-          </Router>
+          <HashRouter>
+            <Switch>
+              <Route exact path='/' component={CollectionContainer} />
+              <Route exact path='/book/:bookId' component={ReaderContainer} />
+            </Switch>
+          </HashRouter>
           <TableOfContents />
           <Info />
           <Loader />

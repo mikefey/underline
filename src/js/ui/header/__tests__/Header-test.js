@@ -1,5 +1,5 @@
 import test from 'ava';
-import React, { Component } from 'react';
+import React from 'react';
 import { renderToString } from 'react-dom/server';
 
 import Header from './../Header.jsx';

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './InfoButton.scss';
 
 
@@ -24,7 +25,7 @@ const InfoButton = (props) => {
  * clicked
  */
 InfoButton.propTypes = {
-  clickHandler: React.PropTypes.func.isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default InfoButton;

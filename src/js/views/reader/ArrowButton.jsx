@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './ArrowButton.scss';
 
 
@@ -32,8 +33,8 @@ const ArrowButton = (props) => {
  * @prop {String} position - Either 'left' or 'right'
  */
 ArrowButton.propTypes = {
-  clickHandler: React.PropTypes.func.isRequired,
-  position: React.PropTypes.string.isRequired,
+  clickHandler: PropTypes.func.isRequired,
+  position: PropTypes.string.isRequired,
 };
 
 export default ArrowButton;

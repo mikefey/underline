@@ -1,4 +1,4 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 function getEntrySources(sources) {
@@ -18,18 +18,31 @@ module.exports = {
     filename: 'build/app.build.js',
   },
   devtool: 'eval',
+  mode: 'development',
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:15]',
-            'sass-loader?outputStyle=expanded&sourceMap',
-            'resolve-url-loader',
-          ],
-        }),
+        include: /src/,
+        loaders: [
+          'style-loader',
+          'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:15]',
+          'sass-loader?outputStyle=expanded&sourceMap',
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // you can specify a publicPath here
+              // by default it use publicPath in webpackOptions.output
+              publicPath: '../',
+            },
+          },
+          'css-loader',
+        ],
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -55,9 +68,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new ExtractTextPlugin({ filename: 'build/app.build.css', allChunks: true }),
-  ],
   resolve: {
     modules: [
       path.resolve('./src/js'),

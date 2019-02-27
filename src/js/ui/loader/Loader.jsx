@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './Loader.scss';
 
 /**
@@ -23,7 +24,7 @@ const Loader = (props) => {
  * @prop {Object} loaderState - The loader state in the store
  */
 Loader.propTypes = {
-  loaderState: React.PropTypes.object.isRequired,
+  loaderState: PropTypes.object.isRequired,
 };
 
 export default Loader;

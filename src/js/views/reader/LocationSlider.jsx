@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import style from './LocationSlider.scss';
 
 
@@ -7,7 +8,7 @@ import style from './LocationSlider.scss';
  * @param {Object} props - The component props
  * @returns {undefined} undefined
  */
-class LocationSlider extends Component {
+class LocationSlider extends React.Component {
   constructor(props) {
     super(props);
 
@@ -238,9 +239,9 @@ LocationSlider.defaultProps = {
  */
 
 LocationSlider.propTypes = {
-  dragStopHandler: React.PropTypes.func.isRequired,
-  maxWidth: React.PropTypes.number,
-  readerState: React.PropTypes.object.isRequired,
+  dragStopHandler: PropTypes.func.isRequired,
+  maxWidth: PropTypes.number,
+  readerState: PropTypes.object.isRequired,
 };
 
 export default LocationSlider;

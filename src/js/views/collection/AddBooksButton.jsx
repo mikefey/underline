@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import DropboxChooser from 'react-dropbox-chooser';
 import config from 'config';
 import style from './AddBooksButton.scss';
@@ -40,7 +41,7 @@ const AddBooksButton = (props) => {
  * @prop {Function} downloadBook - function to dispatch a DOWNLOAD_BOOK action
  */
 AddBooksButton.propTypes = {
-  downloadBook: React.PropTypes.func.isRequired,
+  downloadBook: PropTypes.func.isRequired,
 };
 
 export default AddBooksButton;

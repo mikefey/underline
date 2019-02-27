@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import stringHelper from 'libs/string/string-helper';
 import style from './CollectionBook.scss';
 
@@ -132,9 +133,9 @@ const CollectionBook = (props) => {
  * window
  */
 CollectionBook.propTypes = {
-  data: React.PropTypes.object.isRequired,
-  removeButtonClickHandler: React.PropTypes.func.isRequired,
-  windowSize: React.PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
+  removeButtonClickHandler: PropTypes.func.isRequired,
+  windowSize: PropTypes.object.isRequired,
 };
 
 export default CollectionBook;

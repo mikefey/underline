@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Header from 'ui/header/Header.jsx';
 import BackButton from 'ui/back-button/BackButton.jsx';
 import stringHelper from 'libs/string/string-helper';
@@ -14,7 +15,7 @@ import style from './Reader.scss';
 /**
  * Reader view component
  */
-class Reader extends Component {
+class Reader extends React.Component {
   constructor(props) {
     super(props);
 
@@ -178,7 +179,7 @@ class Reader extends Component {
    * @returns {undefined} undefined
    */
   loadBook() {
-    const bookId = this.props.params.bookId;
+    const bookId = this.props.match.params.bookId;
 
     this.props.showLoader('Loading book');
     this.props.loadBook(bookId);
@@ -660,7 +661,7 @@ Reader.defaultProps = {
  * FINDING_BOOK_POSITION action
  * @prop {Function} loadBook - Function to dispatch a LOAD_BOOK action
  * @prop {Object} loaderState - The loader state from the store
- * @prop {Object} params - The route params
+ * @prop {Object} match - The route data, including params
  * @prop {Object} readerState - The reader state from the store
  * @prop {Object} resizerState - The resizer state from the store
  * @prop {Function} showTableOfContents - Function to dispatch a
@@ -674,19 +675,19 @@ Reader.defaultProps = {
  * UPDATE_TABLE_OF_CONTENTS action
  */
 Reader.propTypes = {
-  hideLoader: React.PropTypes.func.isRequired,
-  maxWidth: React.PropTypes.number,
-  showLoader: React.PropTypes.func.isRequired,
-  loadBook: React.PropTypes.func.isRequired,
-  loaderState: React.PropTypes.object.isRequired,
-  params: React.PropTypes.object.isRequired,
-  readerState: React.PropTypes.object.isRequired,
-  resizerState: React.PropTypes.object.isRequired,
-  showTableOfContents: React.PropTypes.func.isRequired,
-  sliderReleased: React.PropTypes.func.isRequired,
-  tableOfContentsState: React.PropTypes.object.isRequired,
-  updateBookPositionData: React.PropTypes.func.isRequired,
-  updateTableOfContents: React.PropTypes.func.isRequired,
+  hideLoader: PropTypes.func.isRequired,
+  maxWidth: PropTypes.number,
+  showLoader: PropTypes.func.isRequired,
+  loadBook: PropTypes.func.isRequired,
+  loaderState: PropTypes.object.isRequired,
+  match: PropTypes.object.isRequired,
+  readerState: PropTypes.object.isRequired,
+  resizerState: PropTypes.object.isRequired,
+  showTableOfContents: PropTypes.func.isRequired,
+  sliderReleased: PropTypes.func.isRequired,
+  tableOfContentsState: PropTypes.object.isRequired,
+  updateBookPositionData: PropTypes.func.isRequired,
+  updateTableOfContents: PropTypes.func.isRequired,
 };
 
 export default Reader;

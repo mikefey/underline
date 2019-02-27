@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 
 /**
  * Resizer component
  * @class
  */
-class Resizer extends Component {
+class Resizer extends React.Component {
   constructor(props) {
     super(props);
 
@@ -81,8 +82,8 @@ Resizer.defaultProps = {
  * @prop {Function} windowResized - An action function for a WINDOW_RESIZED event
  */
 Resizer.propTypes = {
-  useScreenDimensions: React.PropTypes.bool,
-  windowResized: React.PropTypes.func.isRequired,
+  useScreenDimensions: PropTypes.bool,
+  windowResized: PropTypes.func.isRequired,
 };
 
 

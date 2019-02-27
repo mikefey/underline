@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './PlaceholderPage.scss';
 
 
@@ -69,7 +70,7 @@ PlaceholderPage.defaultProps = {
  * @prop {Boolean} right - If the component is on the right side of the content
  */
 PlaceholderPage.propTypes = {
-  right: React.PropTypes.bool,
+  right: PropTypes.bool,
 };
 
 export default PlaceholderPage;

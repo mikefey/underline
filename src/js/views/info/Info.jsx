@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Header from 'ui/header/Header.jsx';
 import CloseButton from 'ui/close-button/CloseButton.jsx';
 import style from './Info.scss';
@@ -69,8 +70,8 @@ const Info = (props) => {
  * @prop {Object} infoState - The info state in the store
  */
 Info.propTypes = {
-  hideInfo: React.PropTypes.func.isRequired,
-  infoState: React.PropTypes.object.isRequired,
+  hideInfo: PropTypes.func.isRequired,
+  infoState: PropTypes.object.isRequired,
 };
 
 export default Info;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './TableOfContentsButton.scss';
 
 
@@ -29,8 +30,8 @@ const TableOfContentsButton = (props) => {
  * @prop {Object} data - An object with the section data
  */
 TableOfContentsButton.propTypes = {
-  clickHandler: React.PropTypes.func.isRequired,
-  data: React.PropTypes.object.isRequired,
+  clickHandler: PropTypes.func.isRequired,
+  data: PropTypes.object.isRequired,
 };
 
 export default TableOfContentsButton;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './OpenTOCButton.scss';
 
 
@@ -28,7 +29,7 @@ const OpenTOCButton = (props) => {
  * clicked
  */
 OpenTOCButton.propTypes = {
-  clickHandler: React.PropTypes.func.isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default OpenTOCButton;

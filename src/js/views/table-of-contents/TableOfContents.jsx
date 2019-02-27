@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Header from 'ui/header/Header.jsx';
 import CloseButton from 'ui/close-button/CloseButton.jsx';
 import TableOfContentsButton from './TableOfContentsButton.jsx';
@@ -69,8 +70,8 @@ const TableOfContents = (props) => {
  * store
  */
 TableOfContents.propTypes = {
-  hideTableOfContents: React.PropTypes.func.isRequired,
-  tableOfContentsState: React.PropTypes.object.isRequired,
+  hideTableOfContents: PropTypes.func.isRequired,
+  tableOfContentsState: PropTypes.object.isRequired,
 };
 
 export default TableOfContents;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './Header.scss';
 
 /**
@@ -31,9 +32,9 @@ Header.defaultProps = {
  * @prop {String} text - The text to display in the header
  */
 Header.propTypes = {
-  leftButton: React.PropTypes.element,
-  rightButton: React.PropTypes.element,
-  text: React.PropTypes.string.isRequired,
+  leftButton: PropTypes.element,
+  rightButton: PropTypes.element,
+  text: PropTypes.string.isRequired,
 };
 
 export default Header;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './CloseButton.scss';
 
 
@@ -27,7 +28,7 @@ const CloseButton = (props) => {
  * clicked
  */
 CloseButton.propTypes = {
-  clickHandler: React.PropTypes.func.isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default CloseButton;
